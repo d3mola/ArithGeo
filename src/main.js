@@ -28,9 +28,33 @@ module.exports = {
  			}
 
  			// test if flag is true, and return 'Arithmetic'
- 			if (flag === true)
+ 			if (flag === true) {
  				return 'Arithmetic';
+ 			}
+ 			// Geometric check
+			else {
+				let ratio = arr[1] / arr[0];
+	 			let flag1 = true;
+
+	 			for (let i = 0; i < arr.length - 1; i++) {
+
+	 				if ((arr[i+1] / arr[i]) != ratio) {
+	 					flag1 = false;
+	 				}
+	 		
+	 			}
+
+	 			// test if flag is true, and return 'Arithmetic'
+	 			if (flag1 === true) {
+	 				return 'Geometric';
+	 			}
+
+	 			return -1;
+
+			}
 		}
+
+		
 
 	}
 }
