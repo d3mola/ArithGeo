@@ -50,9 +50,6 @@ describe("Arithmetic or Geometric arithGeo", function() {
 	})
 
 	describe("handle invalid input", function() {
-		it("should return undefined as arithGeo for empty input", function() {
-			assert.equal(myApp.arithGeo(), undefined);
-		});
 
 		it("should return undefined as arithGeo for non-arrays", function() {
 			assert.equal(myApp.arithGeo(false), undefined);
