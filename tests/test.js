@@ -9,27 +9,27 @@ describe("Arithmetic or Geometric arithGeo", function() {
 
 	describe("handle valid input", function() {
 		it("should return Arithmetic as arithGeo for [1, 2, 3, 4, 5]", function() {
-			assert.equal(myApp.arithGeo([1, 2, 3, 4, 5]), Arithmetic);
+			assert.equal(myApp.arithGeo([1, 2, 3, 4, 5]), 'Arithmetic');
 		});
 
 		it("should return Arithmetic as arithGeo for [8, 6, 4, 2]", function() {
-			assert.equal(myApp.arithGeo([8, 6, 4, 2]), Arithmetic);
+			assert.equal(myApp.arithGeo([8, 6, 4, 2]), 'Arithmetic');
 		});
 
 		it("should return Arithmetic as arithGeo for [5, 10, 15, 20]", function() {
-			assert.equal(myApp.arithGeo([5, 10, 15, 20]), Arithmetic);
+			assert.equal(myApp.arithGeo([5, 10, 15, 20]), 'Arithmetic');
 		});
 
 		it("should return Geometric as arithGeo for [-1, -3, -9, -27]", function() {
-			assert.equal(myApp.arithGeo([-1, -3, -9, -27]), Geometric);
+			assert.equal(myApp.arithGeo([-1, -3, -9, -27]), 'Geometric');
 		});
 
 		it("should return Geometric as arithGeo for [54, 18, 6, 2]", function() {
-			assert.equal(myApp.arithGeo([54, 18, 6, 2]), Geometric);
+			assert.equal(myApp.arithGeo([54, 18, 6, 2]), 'Geometric');
 		});
 
 		it("should return Geometric as arithGeo for [-2, -8, -32, -128]", function() {
-			assert.equal(myApp.arithGeo([-2, -8, -32, -128]), Geometric);
+			assert.equal(myApp.arithGeo([-2, -8, -32, -128]), 'Geometric');
 		});
 
 		it("should return 0 as arithGeo for []", function() {
