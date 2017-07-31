@@ -1,0 +1,22 @@
+{
+  "name": "bootcamp-day!",
+  "version": "1.0.0",
+  "description": "an app that checks if an array is arithmetic or geometric",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "TDD",
+    "Javascript"
+  ],
+  "author": "Ademola Ariya",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
