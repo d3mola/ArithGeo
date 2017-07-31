@@ -14,6 +14,10 @@ module.exports = {
 		else if (arr.length < 1) {
 			return 0;
 		}
+		// check if array has only one element
+		else if (arr.length == 1) {
+			return -1;
+		}
 		//check if array is arithmetic
 		else {
 			let diff = arr[1] - arr[0];

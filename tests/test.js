@@ -47,6 +47,10 @@ describe("Arithmetic or Geometric arithGeo", function() {
 		it("should return -1 as arithGeo for [6, 2, 1]", function() {
 			assert.equal(myApp.arithGeo([6, 2, 1]), -1);
 		});
+
+		it("should return -1 as arithGeo for [5]", function() {
+			assert.equal(myApp.arithGeo([5]), -1);
+		});
 	})
 
 	describe("handle invalid input", function() {
