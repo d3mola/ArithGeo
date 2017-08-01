@@ -9,15 +9,11 @@ module.exports = {
 		// check if argument is an array
 		if (Array.isArray(arr) !== true) {
 			return undefined;
-		}
 
-		//check if arr is empty
-		else if (arr.length < 1) {
+		} else if (arr.length < 1) { //check if arr is empty
 			return 0;
-		}
-		
-		// check if array has only one element
-		else if (arr.length == 1) {
+			
+		} else if (arr.length == 1) {
 			return -1;
 
 		} else { //check if array is arithmetic
