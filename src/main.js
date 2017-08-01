@@ -10,16 +10,18 @@ module.exports = {
 		if (Array.isArray(arr) !== true) {
 			return undefined;
 		}
+
 		//check if arr is empty
 		else if (arr.length < 1) {
 			return 0;
 		}
+		
 		// check if array has only one element
 		else if (arr.length == 1) {
 			return -1;
-		}
-		//check if array is arithmetic
-		else {
+
+		} else { //check if array is arithmetic
+
 			let diff = arr[1] - arr[0];
  			let flag = true;
 
@@ -34,9 +36,9 @@ module.exports = {
  			// test if flag is true, and return 'Arithmetic'
  			if (flag === true) {
  				return 'Arithmetic';
- 			}
- 			// Geometric check
-			else {
+
+ 			} else {  // Check if array is a GP
+
 				let ratio = arr[1] / arr[0];
 	 			let flag1 = true;
 
